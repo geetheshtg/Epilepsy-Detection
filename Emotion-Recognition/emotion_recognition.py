@@ -3,7 +3,7 @@ import imutils
 import cv2
 from keras.models import load_model
 import numpy as np
-url = "http://192.168.1.4:8080"
+url = "http://192.168.1.4:8080/video"
 # parameters for loading data and images
 detection_model_path = 'haarcascade_files/haarcascade_frontalface_default.xml'
 emotion_model_path = 'models/_mini_XCEPTION.102-0.66.hdf5'
@@ -28,7 +28,7 @@ camera = cv2.VideoCapture(url)
 while True:
     frame = camera.read()[1]
     #reading the frame
-    frame = imutils.resize(frame,width=300)
+    frame = imutils.resize(frame,width=700)
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     faces = face_detection.detectMultiScale(gray,scaleFactor=1.1,minNeighbors=5,minSize=(30,30),flags=cv2.CASCADE_SCALE_IMAGE)
     
