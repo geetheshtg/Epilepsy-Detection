@@ -1,0 +1,79 @@
+\documentclass[12 points, a4paper]{article} %
+\usepackage{graphicx,amssymb} %
+\usepackage{subcaption}
+\textwidth=15cm \hoffset=-1.2cm %
+\textheight=25cm \voffset=-2cm %
+\renewcommand{\rmdefault}{ptm}
+\pagestyle{empty} %
+\date{\today} %
+
+\def\keywords#1{\begin{center}{\bf Keywords}\\{#1}\end{center}} %
+% Please, do not change any of the above lines
+
+\begin{document}
+
+% Type down your paper title
+% \title{Sample \LaTeX\ abstract for B.Tech Projects}
+\title{Prediction of neurological disorders using Facial Images and EEG Readings with the help of Deep Learning}
+
+% Authors
+%\author{Author 1, Author 2, Author 3 \\ %
+%       University of Hamburg (Germany) \\ \\ % Affiliation 1
+%       Author 4 \\ % If any other author with different Affilation
+ %      University of Author 4 (Country) \\
+\author{
+Harshak Krishnaa K (CB.EN.U4CSE17026) \\
+Karthick Saran S (CB.EN.U4CSE17032) \\
+Geethesh T G (CB.EN.U4CSE17323) \\
+Surya Prasad S (CB.EN.U4CSE17461) \\
+\\ % Affiliation 2 (if needed)
+       % New author \\
+       % New affiliation \\
+       % Add authors and affiliation as needed
+Project Mentor: Dr. O.K.Sikha, Asst. Prof,\\
+Dept. of Computer Science \& Engineering\\
+Amrita School of Engineering\\
+Amrita Vishwa Vidyapeetham
+       %\tt{author@university.com} % Only one corresponding e-mail
+       }%
+\maketitle
+\thispagestyle{empty}
+% The abstract
+\begin{abstract}
+Neurological disorders are diseases that affect the brain and the central nervous systems, which, when left untreated, can lead to severe repercussions in later stages. The symptoms for these are very subtle, and the afflicted are often not capable of expressing their discomfort. Further more, these disorders often go unnoticed by technical experts at times. The detection of these maladies often involve the Electroencephalogram (EEG), and recent studies have proved that the emotions of the afflicted are a major factor as well. In order to boost the public awareness and increase the means to identify such illnesses, a technological solution is required. The aim is to provide an ANN powered, multimodel neuro-disease detector, front-ended by a web-app for ease of use, which detects a list of possible neuro-diseases, given the EEG and a real time feed of the  face of the user.The real time feed would then be subjected to a classifier that detects the emotion of the person. This, along with the EEG is then taken as the feature-set for the model, and accordingly trained so as to classify the neurological disorders and the probability that the person is afflicted is obtained. This output can then be considered by the user before consulting a technical expert for further proceedings.
+\end{abstract}
+
+\vspace{5mm} %5mm vertical space
+
+\keywords{Neurology, Emotion, Healthcare, EEG, Deep Neural Networks} % Write down at least 3 Keywords
+
+\vspace{15mm} %5mm vertical space
+
+
+\begin{figure}[htbp]
+\centering
+  \begin{subfigure}[b]{0.24\linewidth}
+    \includegraphics[width=\linewidth]{Harshak.jpeg}
+     \captionsetup{labelformat=empty}
+     \caption{HARSHAK KRISHNAA K}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.22\linewidth}
+    \includegraphics[width=\linewidth]{Katy.jpeg}
+    \captionsetup{labelformat=empty}
+    \caption{KARTHICK SARAN S}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.22\linewidth}
+    \includegraphics[width=\linewidth]{Geethesh.jpeg}
+    \captionsetup{labelformat=empty}
+    \caption{GEETHESH T G}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.22\linewidth}
+    \includegraphics[width=\linewidth]{Surya.jpeg}
+     \captionsetup{labelformat=empty}
+     \caption{SURYA PRASAD S}
+  \end{subfigure}
+\end{figure}
+ 
+
+% \section{Introduction}
+\end{document}
