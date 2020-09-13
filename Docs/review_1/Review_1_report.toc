@@ -1,0 +1,18 @@
+\contentsline {chapter}{ABSTRACT}{i}{chapter*.1}%
+\contentsline {chapter}{LIST OF TABLES}{iii}{chapter*.3}%
+\contentsline {chapter}{LIST OF FIGURES}{iv}{chapter*.4}%
+\contentsline {chapter}{ABBREVIATIONS}{v}{chapter*.5}%
+\contentsline {chapter}{LIST OF SYMBOLS}{vi}{chapter*.6}%
+\contentsline {chapter}{\numberline {1}INTRODUCTION}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Problem Definition}{1}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Sub sections}{2}{subsection.1.1.1}%
+\contentsline {subsubsection}{Sub-sub sections}{2}{subsection.1.1.1}%
+\contentsline {chapter}{\numberline {2}LITERATURE SURVEY}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Frequency Domain SI}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Particle Swarm Optimization}{3}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Summary}{3}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Data Set( If applicable)}{4}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Software/Tools Requirements}{4}{section.2.5}%
+\contentsline {chapter}{\numberline {3}Modularization \& Plan}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1} Responsibilities of Team Members}{5}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Month Wise Plan}{5}{section.3.2}%
