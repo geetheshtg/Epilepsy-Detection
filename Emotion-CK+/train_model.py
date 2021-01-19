@@ -52,9 +52,10 @@ for dataset in data_dir_list:
         
 img_data = np.array(img_data_list)
 img_data = img_data.astype('float32')
-img_data = img_data/255
+img_data = img_data/255.0
 img_data.shape
-
+#img_data is same as faces
+#labels is same as emotions
 num_classes = 7
 
 num_of_samples = img_data.shape[0]
@@ -68,15 +69,15 @@ labels[636:843]=4 #207 happy
 labels[843:897]=5 #54 contempt
 labels[897:980]=6 #84 sadness
 
+
 Y = np_utils.to_categorical(labels, num_classes)
 
 #Shuffle the dataset
-x,y = shuffle(img_data,Y, random_state=2)
+#x,y = shuffle(img_data,Y, random_state=2)
 # Split the dataset
-X_train, X_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=2)
-X_train = X_train.reshape(X_train.shape[0], 48, 48, 3)  
-
-X_test = X_test.reshape(X_test.shape[0], 48, 48, 3)  
+X_train, X_test, y_train, y_test = train_test_split(img_data, Y, test_size=0.2, shuffle=True)
+#X_train = X_train.reshape(X_train.shape[0], 48, 48, 3)
+#X_test = X_test.reshape(X_test.shape[0], 48, 48, 3)  
 
 
 def create_model():
@@ -138,7 +139,7 @@ def generator(X_data, y_data, batch_size):
 
 gg=model_custom.fit_generator(generator(X_train, y_train, batch_size = 15), steps_per_epoch = 30, epochs=150, validation_data=(X_test, y_test), shuffle=1)
 # visualizing losses and accuracy
-
+'''
 train_loss=gg.history['loss']
 val_loss=gg.history['val_loss']
 train_acc=gg.history['accuracy']
@@ -158,7 +159,7 @@ plt.plot(epochs,val_acc,'b', label='val_acc')
 plt.title('train_acc vs val_acc')
 plt.legend()
 plt.figure()
-
+'''
 
 target_dir = './models'
 if not os.path.exists(target_dir):
