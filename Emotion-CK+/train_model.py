@@ -30,6 +30,7 @@ from keras.wrappers.scikit_learn import KerasClassifier
 from sklearn.model_selection import cross_val_score, cross_val_predict
 from sklearn.datasets import make_classification
 from keras.callbacks import EarlyStopping, ModelCheckpoint, ReduceLROnPlateau
+from create_model import create_model
 
 data_path = '/home/geethesh/Documents/venv/Neurological-Disorders-Classification/Emotion-CK+/ckplus'
 data_dir_list = os.listdir(data_path)
@@ -79,7 +80,7 @@ X_train, X_test, y_train, y_test = train_test_split(img_data, Y, test_size=0.2, 
 #X_train = X_train.reshape(X_train.shape[0], 48, 48, 3)
 #X_test = X_test.reshape(X_test.shape[0], 48, 48, 3)  
 
-
+'''
 def create_model():
     model = Sequential()
     model.add(Conv2D(3, kernel_size=(3, 3), input_shape=(48,48,3))) 
@@ -116,7 +117,7 @@ def create_model():
 
     
     return model
-
+'''
 from keras.preprocessing.image import ImageDataGenerator
 model_custom = create_model()
 model_custom.summary()
